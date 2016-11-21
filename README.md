@@ -16,11 +16,11 @@ Here's an example installing a [Laravel](https://laravel.com/) application, runn
               - php -r "file_exists('.env') || copy('.env.ci', '.env');"
               - service mysql start
               - mysql -h localhost -u root -proot -e "CREATE DATABASE test;"
-              - mv /etc/php5/cli/conf.d/20-xdebug.ini /etc/php5/cli/conf.d/20-xdebug.ini.disabled
+              - mv /etc/php/7.0/cli/conf.d/20-xdebug.ini /etc/php/7.0/cli/conf.d/20-xdebug.ini.disabled
               - composer config -g github-oauth.github.com lalalalalala
               - composer install --no-interaction --no-progress --prefer-dist
               - php artisan key:generate
               - php artisan migrate
-              - mv /etc/php5/cli/conf.d/20-xdebug.ini.disabled /etc/php5/cli/conf.d/20-xdebug.ini
+              - mv /etc/php/7.0/cli/conf.d/20-xdebug.ini.disabled /etc/php/7.0/cli/conf.d/20-xdebug.ini
               - vendor/bin/phpunit --coverage-clover=coverage.xml
               - if [ $? -eq 0 ]; then bash <(curl -s https://codecov.io/bash); fi
