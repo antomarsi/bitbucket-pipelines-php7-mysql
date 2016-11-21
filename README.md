@@ -6,7 +6,7 @@ The image contains most things you need to test a PHP application.
 
 ## Example
 
-Here's an example installing a [Laravel](https://laravel.com/) application, running the tests with a Composer locked version of [PHPUnit](https://phpunit.de) and pushing code coverage information to [Codecov](https://codecov.io):
+Here's an example installing a [Laravel](https://laravel.com/) application, running the tests with a [Composer](https://getcomposer.org/) locked version of [PHPUnit](https://phpunit.de) and pushing code coverage information to [Codecov](https://codecov.io):
 
     image: punkstar/bitbucket-pipelines-php7-mysql
     pipelines:
