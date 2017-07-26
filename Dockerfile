@@ -44,3 +44,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --in
 
 # Install PHPUnit
 RUN curl https://phar.phpunit.de/phpunit.phar > phpunit.phar && chmod +x phpunit.phar && mv phpunit.phar /usr/local/bin/phpunit
+
+# Install Git-FTP
+RUN \
+  apt-get -y update && \
+  apt-get -y install git && \
+  apt-get -y install git-ftp \
+  apt-get autoclean && apt-get clean && apt-get autoremove
