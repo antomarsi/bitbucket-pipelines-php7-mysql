@@ -49,5 +49,5 @@ RUN curl https://phar.phpunit.de/phpunit.phar > phpunit.phar && chmod +x phpunit
 RUN \
   apt-get -y update && \
   apt-get -y install git && \
-  apt-get -y install git-ftp \
+  apt-get -y install git-ftp && \
   apt-get autoclean && apt-get clean && apt-get autoremove
